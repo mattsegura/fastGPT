@@ -1,0 +1,4 @@
+fastapi
+revChatGPT
+uvicorn
+pydantic
