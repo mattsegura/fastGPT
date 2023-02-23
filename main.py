@@ -46,10 +46,10 @@ def get_last_message(response: str) -> str:
 """
 @app.post("/ask/")
 async def ask(prompt: str):
-    print(prompt)
     if chatbot is None:
         return {"error": "Chatbot not initialized. Please log in first."}
     else:
+        print(prompt)
         # retrieve the text from chatgpt
         response = chatbot.ask(prompt)
         # store the text into a list
